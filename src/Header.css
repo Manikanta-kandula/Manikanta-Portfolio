@@ -1,0 +1,529 @@
+header {
+    padding: 20px;
+    color: white;
+    background-color: #0d1117;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h1 span {
+    color: #58a6ff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #c9d1d9;
+  }
+  
+  .links a {
+    margin: 0 10px;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; /* Add padding for spacing */
+    border-radius: 30px; /* More rounded corners */
+    border: 2px solid #bac0c7; /* Add a border */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between the icon and text */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .links a:hover {
+    background-color: #e0f7ff;
+    color: #000;
+    border-color: #6e7174; /* Change border color on hover */
+  }
+  
+  .links a .icon {
+    font-size: 18px; /* Adjust icon size */
+  }
+  
+  .github {
+    background-color: #fff;
+  }
+  
+  .linkedin {
+    background-color: #a8b4bb;
+    color: #fff;
+  }
+  
+  .linkedin:hover {
+    background-color: #e7ebee;
+  }
+  
+  .github:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .navbar {
+    display: flex;
+    background: linear-gradient(to right, #c3c3c3, #d3d3d3);
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    position: sticky;   /* Make the navbar sticky */
+    top: 0;              /* Stick it to the top */
+    z-index: 1000;       /* Ensure it stays on top of other content */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  .nav-item.active {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Remove default link styling (blue color and underlining) */
+  .nav-item a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Use the parent color */
+  }
+  
+  /* Optional: To ensure links are styled the same as nav items */
+  .nav-item a:hover {
+    color: #000; /* Adjust hover color if needed */
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;  /* Ensures the image covers the circle without distortion */
+  }
+  
+  .projects {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;  /* Stack projects vertically */
+    gap: 20px;  /* Add 20px gap between each project */
+    padding: 0 20px;
+    align-items: center;  /* Center align projects horizontally */
+}
+  .project-card {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Limits max width for each card */
+  }
+  
+  .project-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .project-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .tech-stack {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-stack img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-links a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+  }
+  
+  .project-links a:hover {
+    background-color: #0056b3;
+  }
+  
+  .project-image img {
+    max-width: 450px;
+    border-radius: 10px;
+  }
+  
+  .project-image {
+    flex: 1;
+    text-align: center;
+  }
+  .skills-container {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .skill {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    min-width: 120px; /* Ensures each skill button has a minimum size */
+  }
+  
+  .skill:hover {
+    background-color: #d3d3d3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Alignment of skills with the project section */
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* Global styles for the experience section */
+.experience {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .experience h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .timeline-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .company {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  .education {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .education h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .education-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap:20px;
+  }
+  .education-card1{
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  .education-logo{
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .education-details {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .education-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .education-details p {
+    color: #193a5a;
+  }
+  
+  .education-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-details li {
+    margin-bottom: 5px;
+  }
+
+  .umkc-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Maximum width of 500px */
+  }
+  .project1-img{
+    width: 100%;
+    height: 350px;
+    max-width: 500px; /* Maximum width of 500px */
+  }
+  .srm-img{
+    width: 100%;
+    height: 100%;
+  }
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .contact-form a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-form a:hover {
+    text-decoration: underline;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  /* Adjust the header font size */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Container should have full width on mobile */
+  .container {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  /* Adjust navbar for mobile */
+  .navbar {
+    flex-direction: column;
+    gap:5px;
+    padding: 10px 0px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Profile Image */
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Adjust project section */
+  .projects-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .project-links a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .skills-container {
+    padding: 0 20px;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .skill {
+    font-size: 1rem;
+    min-width: 100px;
+  }
+
+  /* Adjust experience section */
+  .experience {
+    padding: 30px 15px;
+  }
+
+  .experience-timeline {
+    gap: 20px;
+  }
+
+  .timeline-item {
+    padding: 15px;
+  }
+
+  /* Adjust education section */
+  .education-card {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .education-logo {
+    max-width: 100px;
+  }
+
+  .education-details h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Contact form adjustments */
+  .contact-form {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  /* Project images responsive */
+  .project1-img, .umkc-img, .srm-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
