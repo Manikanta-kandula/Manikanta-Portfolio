@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Manikanta-Portfolio/static/css/main.ea3420a1.css",
+    "main.js": "/Manikanta-Portfolio/static/js/main.ce3fdd2f.js",
+    "static/media/chat.jpeg": "/Manikanta-Portfolio/static/media/chat.06a27518ae8a94f2585a.jpeg",
+    "static/media/Discounts.jpeg": "/Manikanta-Portfolio/static/media/Discounts.44a970fb225ac745651b.jpeg",
+    "static/media/umkc.png": "/Manikanta-Portfolio/static/media/umkc.0c79b78659fe73f496f8.png",
+    "static/media/Manikanta.jpeg": "/Manikanta-Portfolio/static/media/Manikanta.3ace708c555b1ef98ec0.jpeg",
+    "static/media/Quiz_application.png": "/Manikanta-Portfolio/static/media/Quiz_application.9ef8790338d23e54292e.png",
+    "static/media/result.png": "/Manikanta-Portfolio/static/media/result.c9dae3315db6756bd4c2.png",
+    "static/media/srm.png": "/Manikanta-Portfolio/static/media/srm.a6cfc1f65cb78e4a2c58.png",
+    "index.html": "/Manikanta-Portfolio/index.html",
+    "main.ea3420a1.css.map": "/Manikanta-Portfolio/static/css/main.ea3420a1.css.map",
+    "main.ce3fdd2f.js.map": "/Manikanta-Portfolio/static/js/main.ce3fdd2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea3420a1.css",
+    "static/js/main.ce3fdd2f.js"
+  ]
+}
